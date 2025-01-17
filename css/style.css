@@ -1,0 +1,269 @@
+        /* Zorg ervoor dat de body het volledige scherm vult */
+        body {
+            font-family: "Neucha", serif;
+            background-color: #f5f2eb;
+            color: #5b4636;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* De inhoud van de pagina */
+        main {
+            flex: 1; /* Dit zorgt ervoor dat de inhoud de beschikbare ruimte vult */
+        }
+
+        .header {
+            background-color: #e9e4dc;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            height: 100px;
+        }
+
+        .header .brand-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .header img {
+            height: 100px; /* Vergroot het logo */
+            object-fit: contain;
+        }
+
+        .dropdown-content {
+            background-color: #ffffff;
+            color: #5b4636;
+        }
+
+        .dropdown-content li > a {
+            color: #5b4636;
+        }
+
+        .dropdown-content li > a:hover {
+            background-color: #f5f2eb;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #f5f2eb;
+        }
+
+        .banner h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .image {
+            flex: 1;
+            max-width: 400px;
+            margin: 10px;
+        }
+
+        .image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .text {
+            flex: 2;
+            max-width: 700px; /* Breder gemaakt */
+            margin: 10px;
+            font-size: 18px;
+            line-height: 1.6;
+            /* text-align: center; */
+            align-self: center;
+        }
+
+        .text h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .text ul {
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        .text ul li {
+            margin: 10px 0;
+        }
+
+        .hamburger {
+            display: inline-block;
+            cursor: pointer;
+            margin-right: 15px;
+        }
+
+        .hamburger i {
+            font-size: 32px;
+            color: #5b4636;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .text-container{
+            display: flex;
+        }
+
+        .footer {
+            background-color: #4e3b31; /* Donkerdere kleur dan de header */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            position: relative; /* Verplaatst de footer naar de onderkant van de pagina */
+        }
+        
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Zorgt ervoor dat alles op kleinere schermen onder elkaar komt */
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;  /* Zet de links verticaal */
+            gap: 10px;               /* Ruimte tussen de links */
+            align-items: center;     /* Zorgt ervoor dat de links gecentreerd worden */
+        }
+        
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+        
+        .footer-contact p {
+            margin: 0;
+            font-size: 16px;
+        }
+        
+        .footer-contact a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icon {
+            color: #fff;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            color: #e9e4dc; /* Lichte kleur bij hover */
+        }
+
+        .footer-credits {
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            margin-top: 15px; /* Ruimte tussen de social icons en de credits */
+        }
+        
+        .footer-credits p {
+            margin: 0;
+        }
+        
+        .footer-credits strong {
+            color: #e9e4dc; /* Lichte kleur voor de nadruk op Kraamzorg Mimi en Detra IT */
+        }
+
+        .inschrijf-formulier {
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .inschrijf-formulier h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            margin-bottom: 20px;
+        }
+
+        .input-field label {
+            font-size: 16px;
+            color: #5b4636;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .input-field input, .input-field textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .input-field input[type="date"] {
+            font-family: inherit;
+        }
+
+        .textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            text-align: center;
+        }
+
+        .submit-btn .btn {
+            background-color: #5b4636;
+            color: white;
+            padding: 0px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn .btn:hover {
+            background-color: #4e3b31;
+        }

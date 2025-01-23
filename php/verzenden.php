@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $aanvullende_informatie = htmlspecialchars($_POST['aanvullende_informatie']);
 
     // E-mailinstellingen
-    $to = "thomasdiondehaas@hotmail.com.com"; // Zet hier je eigen e-mailadres in
+    $to = "thomasdiondehaas@hotmail.com"; // Zet hier je eigen e-mailadres in
     // info@kraamzorgmimi.com
     $subject = "Inschrijving Kraamzorg Mimi";
 
